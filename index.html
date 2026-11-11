@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA ROASTERS | Artisan Coffee & Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">AURA<span>ROASTERS</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">Our Story</a>
+      <a href="#reserve" class="btn-nav">Book a Table</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="tagline">SMALL BATCH • FRESHLY ROASTED</span>
+      <h1>Crafted Coffee for <span>Slow Mornings</span></h1>
+      <p>Experience ethically sourced single-origin espresso, handcrafted pastries, and a calm space designed for creators and coffee lovers.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Explore Menu</a>
+        <a href="#reserve" class="btn-outline">Reserve a Spot</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="featured-badge">BARISTA'S PICK</div>
+      <h3>Caramel Oat Cortado</h3>
+      <p>Double-shot Ethiopian espresso balanced with velvety steamed oat milk and house-made salted caramel.</p>
+      <div class="price-row">
+        <span class="price">$4.75</span>
+        <span class="calories">140 kcal</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section with Category Tabs -->
+  <section id="menu" class="section">
+    <h2 class="section-title">SIGNATURE <span>MENU</span></h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-category="all">All Favorites</button>
+      <button class="tab-btn" data-category="coffee">Hot & Iced Coffee</button>
+      <button class="tab-btn" data-category="bakery">Fresh Bakery</button>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item" data-category="coffee">
+        <div class="item-header">
+          <h4>Velvet Flat White</h4>
+          <span class="item-price">$4.50</span>
+        </div>
+        <p>Rich ristretto shots topped with silky micro-foamed whole or almond milk.</p>
+      </div>
+
+      <div class="menu-item" data-category="coffee">
+        <div class="item-header">
+          <h4>Kyoto Cold Brew</h4>
+          <span class="item-price">$5.00</span>
+        </div>
+        <p>Slow-dripped for 16 hours for a smooth, chocolatey finish over crystal ice.</p>
+      </div>
+
+      <div class="menu-item" data-category="bakery">
+        <div class="item-header">
+          <h4>Almond Frangipane Croissant</h4>
+          <span class="item-price">$4.25</span>
+        </div>
+        <p>Flaky French butter pastry filled with roasted almond cream and toasted flakes.</p>
+      </div>
+
+      <div class="menu-item" data-category="bakery">
+        <div class="item-header">
+          <h4>Avocado Sourdough Tartine</h4>
+          <span class="item-price">$8.50</span>
+        </div>
+        <p>Country sourdough topped with smashed avocado, chili flakes, and sea salt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Hours -->
+  <section id="about" class="section warm-bg">
+    <div class="about-grid">
+      <div>
+        <h2 class="section-title left">ROASTED WITH <span>PRECISION</span></h2>
+        <p class="about-text">Every bean is roasted in-house weekly to highlight natural notes of dark cocoa, toasted hazelnut, and bright citrus. Free high-speed Wi-Fi and power outlets at every table.</p>
+      </div>
+      <div class="hours-box">
+        <h3>OPENING HOURS</h3>
+        <p><strong>Mon – Fri:</strong> 7:00 AM – 8:00 PM</p>
+        <p><strong>Sat – Sun:</strong> 8:00 AM – 9:00 PM</p>
+        <p class="address">📍 24 Park Street, Downtown</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table Reservation Form -->
+  <section id="reserve" class="section">
+    <h2 class="section-title">RESERVE A <span>TABLE</span></h2>
+    <form class="reserve-form" id="reserveForm">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="number" placeholder="Guests (1-8)" min="1" max="8" required />
+      </div>
+      <div class="form-row">
+        <input type="date" required />
+        <input type="time" required />
+      </div>
+      <button type="submit" class="btn-primary full-width">Confirm Reservation</button>
+      <p id="reserveMsg" class="confirm-msg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 AURA ROASTERS. Handcrafted Web Design Demo.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
